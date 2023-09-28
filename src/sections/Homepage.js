@@ -2,10 +2,7 @@
 import React from 'react'
 import Nav from '@/components/Nav'
 import Gamecard from '@/components/Gamecard'
-import GameModal from '@/components/GameModal'
 import getData from '@/api/getData'
-
-export const revalidate = 0;
 
 export default async function Homepage() {
   const data = await getData()

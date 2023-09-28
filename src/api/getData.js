@@ -1,6 +1,6 @@
 
 async function getData() {
-    const res = await fetch('https://www.freetogame.com/api/games')
+    const res = await fetch('https://www.freetogame.com/api/games', { cache: 'no-cache' })
 
     if (!res.ok) {
         // This will activate the closest `error.js` Error Boundary
