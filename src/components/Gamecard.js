@@ -20,7 +20,7 @@ export default function Gamecard({data}) {
     <div className='w-full h-full flex flex-wrap justify-evenly gap-4 p-10 pt-0'>
     {data.slice(0,30).map((game, index) => {
         return (
-          <div key={index} className='w-fit h-full flex flex-col justify-center items-center group relative cursor-pointer' onClick={() => {setSelectedGame(index); setOpen(!open)}}>
+          <div key={index} className='w-fit h-full flex flex-col justify-center items-center group relative rounded-2xl overflow-hidden cursor-pointer' onClick={() => {setSelectedGame(index); setOpen(!open)}}>
             <img src={game?.thumbnail} alt='thumbnail' width='350px' height='250px' className='group-hover:opacity-50 transition-all duration-300 ease-out'/>
             <h2 className='text-white opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out absolute'>{game?.title}</h2>
           </div>
